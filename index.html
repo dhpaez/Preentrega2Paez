@@ -7,7 +7,10 @@
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Delicias Frías | Los helados que tientan!!!</title>
     <link rel="icon" type="image/png" sizes="57x57" href="img/android-chrome-192x192.png">
     <!--bootstrap-->
@@ -20,31 +23,32 @@
 </head>
 <body id="body_grid">
     <header>
+        <!--logo-->
+        <img class="logo" src="img/delicias_editado.png" alt="logo">
         <nav class="navbar navbar-expand-lg bg-light d-grid gap-2 container-fluid d-md-flex justify-content-md-end">    
-            <div class="header_nav_div  ">                    
+            <div class="header_nav_div">                    
                         <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler btn btn-primary me-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>  
-                    <!--logo-->
-                    <img class="logo" src="img/delicias_editado.png" alt="logo">
+                    
             <!--menu-->
                 <div class="header_div_menu collapse navbar-collapse" id="navbarNav">
                     <ul class="menu_header navbar-nav">
                         <li class="header_ul_li_menu nav-item">
-                        <a class="header_nav_menu nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="header_nav_menu active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="header_ul_li_menu nav-item">
-                        <a class="header_nav_menu nav-link active" href="#">Productos</a>
+                        <a class="header_nav_menu active" href="#">Productos</a>
                         </li>
                         <li class="header_ul_li_menu nav-item">
-                        <a class="header_nav_menu nav-link active" href="#">Promociones</a>
+                        <a class="header_nav_menu active" href="#">Promociones</a>
                         </li>
                         <li class="header_ul_li_menu nav-item">
-                        <a class="header_nav_menu nav-link active" href="pages/contacto.html">Contactenos</a>
+                        <a class="header_nav_menu active" href="pages/contacto.html">Contactenos</a>
                         </li>
                         <li class="header_ul_li_menu nav-item">
-                        <a class="header_nav_menu nav-link active" href="#">Sobre nosotros</a>
+                        <a class="header_nav_menu active" href="#">Sobre nosotros</a>
                         </li>
                     </ul>
                 </div>                
@@ -68,23 +72,32 @@
                     </div>
                 </div>
             </article>
-            <div class="main_section_div">
-            <article class="products">
-                <h2>1/4 Kg 2 gustos</h2>
-                <div class="main_section_article_divImage">
-                    <img class="main_section_article_img" src="img/helado_0.jpg" alt="uncuarto">
-                </div>                
-            </article>
-            <article class="products">
-                <h2>1/2 Kg 3 gustos</h2>
-                <div class="main_section_article_divImage">
-                    <img class="main_section_article_img" src="img/helado_pote_medio.webp" alt="medio">
-                </div>
-            </article>
-            <article class="products">
-                <h2>1 Kg 4 gustos</h2>
-                <div class="main_section_article_divImage">
-                    <img class="main_section_article_img" src="img/helados_pote.JPG" alt="Kilo">
+            <div  id="carouselExampleIndicators" class="main_section_div carousel slide" data-bs-ride="true">
+                <!--mi segundo article-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/copa_frutilla.jpg" class="d-block w-100 main_section_article_img" alt="uncuarto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pexels-roman-odintsov-5061197.jpg" class="d-block w-100 main_section_article_img" alt="medio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bobonhelado.jpg" class="d-block w-100 main_section_article_img" alt="Kilo">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
             </article>
             </div>

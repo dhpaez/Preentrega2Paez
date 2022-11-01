@@ -49,9 +49,13 @@ p{
     margin: 0;
     
 }
+/*My main*/
 .main_section_article_divImage{
     display: flex;
     justify-content: center;
+}
+p{
+    font-family: 'Anton', sans-serif;
 }
 .main_section_article_div_img{
     width: 120px;
@@ -62,8 +66,8 @@ h2{
     text-align: center;
 }
 .main_section_article_img{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
 }
 /* my footer */
 footer{
@@ -151,20 +155,19 @@ body{
     display: grid;
     background-color: #fefbe9;
 }
-    header{
-    background-color: #fff;
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F8F9FA;
 }
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
-.header_nav_div{
-    width: fit-content;
-    background-color: #560bad;
-}
-.logo{ 
+.logo{    
     width: 100px;
     height: 100px;
+    margin: 0 auto;
 }
 .header_div_menu{ 
     text-align: center;
@@ -172,12 +175,20 @@ nav{
 .header_ul_li_menu{
     
     display: inline-block;
+    color: #560bad;
     padding: 10px 10px 10px;
 }
-.header_nav_menu{
+.header_ul_li_menu:hover a{
     color: #000;
+
+}
+/*nav-link*/
+.header_nav_menu{
+    text-decoration: none;
+    color: #5ce1e6;
     display: inline-block;
     font-size: larger;
+    font-family: bold 'Roboto', sans-serif;
 }
 h1{
     text-align: center;
@@ -187,6 +198,7 @@ h1{
 .title_nav{
     padding-left: 40px;
 }
+/*my main*/
 h2{
     font-size: 20px;
 }
@@ -218,8 +230,8 @@ p{
     display: inline-block;
 }
 .main_section_article_img{
-    width: 300px;
-    height: 300px;
+    width: 900px;
+    height: 900px;
 }
 /* my footer*/
 footer{
