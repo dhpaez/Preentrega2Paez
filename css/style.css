@@ -18,7 +18,7 @@ nav{
 .logo{
     display: none;    
 }
-.header_div_logo{
+.header_nav_div{
     text-align: center;
 }
 nav{
@@ -65,33 +65,38 @@ h2{
     width: 100px;
     height: 100px;
 }
-/* mi footer */
+/* my footer */
 footer{
-    background-color: darkgray;
+    background-color: #a9a9a9;
     padding-bottom: 0;
 }
 h3{
+    font-size: 5px;
     text-align: center;
     display: none;
 }
-.footer_div{
+h4{
+    font-size: 10px;
+    text-align: center;
+}
+footer{
     display: flex;
-    flex-direction: column;   /* da problemas en desktop */
+    flex-direction: column;
     align-items: center;
 }
 /* .redes{
 } */
 footer img{
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 5px;
 }
 footer ul{
     display: flex;
 }
 /* From uiverse.io */
-button {
+.footer_button {
     --color: #560bad;
     font-family: inherit;
     display: inline-block;
@@ -109,7 +114,7 @@ button {
     color: var(--color);
 }
 
-button:before {
+.footer_button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -118,22 +123,22 @@ button:before {
     width: 200px;
     border-radius: 50%;
 }
-button:hover {
+.footer_button:hover {
     color: #fff;
 }
 
-button:before {
+.footer_button:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
 }
 
-button:hover:before {
+.footer_button:hover:before {
     top: -30px;
     left: -30px;
 }
 
-button:active:before {
+.footer_button:active:before {
     background: #3a0ca3;
     transition: background 0s;
 }
@@ -153,8 +158,9 @@ nav{
     display: flex;
     justify-content: center;
 }
-.header_div_logo{
-    text-align: center;
+.header_nav_div{
+    width: fit-content;
+    background-color: #560bad;
 }
 .logo{ 
     width: 100px;
@@ -177,7 +183,9 @@ h1{
     text-align: center;
     font-family: 'Pacifico', cursive;
     color: #000;
-    padding-bottom: 20px;
+}
+.title_nav{
+    padding-left: 40px;
 }
 h2{
     font-size: 20px;
@@ -213,33 +221,39 @@ p{
     width: 300px;
     height: 300px;
 }
+/* my footer*/
 footer{
-    grid-template-columns: auto auto;
-    background-color: gray;
-    
-}
-#footer_div_desktop{/*aca no me toma los valores*/
     display: grid;
-    grid-template-columns: auto auto;
-    /*grid-template-columns: 1fr 1fr; */
-    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+    padding-top: 90px;
+    /* padding-bottom: 90px; */
+    /* display: -ms-grid;
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 100px;*/
     
 }
 .redes{
     /* display: flex; */
     width: 300px;
     padding-left: 100px;
+    padding-bottom: 0px;
 }
 h3{
    justify-content: center;
     margin-top: 15px;
     padding-left: 100px;
+    font-size: 20px;
 }
 
 footer ul{
-    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     /* grid-column: center; */
-     
     
 }
 footer img{
@@ -252,7 +266,7 @@ footer img{
 }
 h4{
     padding-right: 12px;
-    font-size: 15px;
+    font-size: 20px;
 }
 input {
     border: none;
@@ -263,15 +277,15 @@ input {
                 -6px -6px 12px #c5c5c5;
     font-size: small;
     font-weight: bold;
-    max-width: 100px;
-    max-height: 20px;
+    max-width: 120px;
+    max-height: 35px;
 }
 
 input:focus {
     outline-color: white;
     place-content: "Enter your message!";
 }
-button {
+.footer_button {
     --color: #560bad;
     font-family: inherit;
     display: inline-block;
@@ -289,7 +303,7 @@ button {
     color: var(--color);
 }
 
-button:before {
+.footer_button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -298,22 +312,22 @@ button:before {
     width: 200px;
     border-radius: 50%;
 }
-   button:hover {
+.footer_button:hover {
     color: #fff;
    }
 
-   button:before {
+.footer_button:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
    }
    
-   button:hover:before {
+.footer_button:hover:before {
     top: -30px;
     left: -30px;
-   }
-   
-   button:active:before {
+}
+
+.footer_button:active:before {
     background: #3a0ca3;
     transition: background 0s;
    }

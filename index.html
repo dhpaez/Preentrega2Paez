@@ -20,14 +20,13 @@
 </head>
 <body id="body_grid">
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <!--logo-->
-                
-            <div class="header_div_logo container-fluid">                    
+        <nav class="navbar navbar-expand-lg bg-light d-grid gap-2 container-fluid d-md-flex justify-content-md-end">    
+            <div class="header_nav_div  ">                    
                         <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler btn btn-primary me-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>  
+                    <!--logo-->
                     <img class="logo" src="img/delicias_editado.png" alt="logo">
             <!--menu-->
                 <div class="header_div_menu collapse navbar-collapse" id="navbarNav">
@@ -50,8 +49,9 @@
                     </ul>
                 </div>                
             </div> 
-            <h1>Helados artesanales</h1>   
+               
         </nav>
+        <div class="title_nav"><h1>Helados artesanales</h1></div>
     </header>
     <!--main-->
     <main>
@@ -90,8 +90,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer_div" id="footer_div_desktop">
+    <footer>        
             <div class="redes">
                 <h3>Seguinos</h3>
                     <ul class="footer__ul">
@@ -115,9 +114,8 @@
             <div class="newslestter">
                 <h4>Suscribirse al newsletter</h4> 
                     <input type="text" placeholder="Tu Email">
-                <button type="submit">Enviar</button>
+                <button class="footer_button" type="submit">Enviar</button>
             </div>
-        </div>
     </footer>
 </body>
 </html>
