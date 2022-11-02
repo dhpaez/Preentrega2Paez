@@ -4,6 +4,11 @@
 }
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 767px){
+body{
+    
+    background-color: #fefbe9;
+}
+    
 header{
     display: grid;
     grid-template-columns: 1fr;
@@ -60,15 +65,32 @@ h2{
     font-size: 12px;
     text-align: center;
 }
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
 .main_section_article_img{
+    display: inline-block;
     width: 300px;
     height: 300px;
 }
+.image_size_main{
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+}
+.main_menu_select{
+    padding: -100px;
+}
+
 /* my footer */
 footer{
     background-color: #a9a9a9;
-    padding-bottom: 30px;
-    padding-top: 10px; 
+    padding-bottom: 35px;
+    padding-top: 60px; 
 }
 h3{
     font-size: 5px;
@@ -208,6 +230,7 @@ h2{
 .div_email{
     padding: 20px;
 }
+
 .main_section_article_div{
     display: flex;
     justify-content: center;
@@ -228,13 +251,23 @@ p{
     width: 450px;
     height: 300px;
 }
+.image_size_main{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px 3px 3px 3px;
+    padding: 20px;
+}
 .main_section_div{
-    text-align: center;
+    display:  flex;
+    justify-content: center;
+    
 }
 .products{
     display: inline-block;
+    padding: 20px;
 }
 .main_section_article_img{
+    display: inline-block;
     width: 900px;
     height: 900px;
 }
