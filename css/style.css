@@ -18,18 +18,13 @@ nav{
 .logo{
     display: none;    
 }
-.header_nav_div{
-    text-align: center;
-}
-nav{
-    justify-self: center;
-}
-.header_div_menu{
-    display: flex;
-    justify-content: center;
-}
 li{
     list-style-type:none;
+    
+}
+.header_nav_menu{
+    text-decoration: none;
+
 }
 h1{
     font-family: 'Pacifico', cursive;
@@ -72,7 +67,8 @@ h2{
 /* my footer */
 footer{
     background-color: #a9a9a9;
-    padding-bottom: 0;
+    padding-bottom: 30px;
+    padding-top: 10px; 
 }
 h3{
     font-size: 5px;
@@ -88,8 +84,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-/* .redes{
-} */
 footer img{
     justify-content: center;
     width: 25px;
@@ -182,7 +176,6 @@ nav{
     color: #000;
 
 }
-/*nav-link*/
 .header_nav_menu{
     text-decoration: none;
     color: #5ce1e6;
@@ -201,6 +194,19 @@ h1{
 /*my main*/
 h2{
     font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.form_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.div_messaje{
+    padding: 20px;
+}
+.div_email{
+    padding: 20px;
 }
 .main_section_article_div{
     display: flex;
@@ -219,9 +225,8 @@ p{
     text-align: left;
 }
 .main_section_article_div_img{
-    width: 310px;
-    height: 250px;
-    border-radius: 2px 2px 2px 2px;
+    width: 450px;
+    height: 300px;
 }
 .main_section_div{
     text-align: center;
@@ -238,17 +243,9 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: gray;
-    padding-top: 90px;
-    /* padding-bottom: 90px; */
-    /* display: -ms-grid;
-    display: flex;
-    justify-content: center;
-    
-    padding-bottom: 100px;*/
-    
+    padding-top: 90px;    
 }
 .redes{
-    /* display: flex; */
     width: 300px;
     padding-left: 100px;
     padding-bottom: 0px;
@@ -265,7 +262,6 @@ footer ul{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* grid-column: center; */
     
 }
 footer img{
@@ -342,6 +338,6 @@ input:focus {
 .footer_button:active:before {
     background: #3a0ca3;
     transition: background 0s;
-   }
+}
    /*#8707ff - violeta #5ce1e6 - turquesa*/
 }
