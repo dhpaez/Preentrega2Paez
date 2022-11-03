@@ -310,6 +310,12 @@ p{
     background-color: #0274be;
     color: #ffffff;
 }
+.main_section_div_sobre{
+    display: flex;
+    align-items: center;
+    
+
+}
 .card {
     display: flex;
     align-items: center;
